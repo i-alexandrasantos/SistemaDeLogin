@@ -37,9 +37,9 @@
 ## 💻 Como Executar o Projeto
 
 1. **Clone este repositório:**
-   ```bash
+   
    git clone https://github.com/i-alexandrasantos/SistemaDeLogin.git
-````
+ 
 
 2. **Abra o projeto em uma IDE compatível:**
 
