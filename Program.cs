@@ -12,24 +12,8 @@ namespace SistemaDeLogin
         {
 
             //criar minha conta
-            //string nome = "";
-            // string dataNascimento = "";
-            int sexo = 0;
-            string nomeUsuario = "";
-            string email = "";
-            string senha =  "";
-            string confirmacaoSenha = "";
 
-            // Inicio Criação da Conta
-
-            Console.WriteLine("Insira as informações abaixo para criar sua nova conta: ");
-            Console.WriteLine("Insira o nome completo: ");
-            string nome = Console.ReadLine();
-
-            Console.WriteLine($"Olá, {nome}. Agora digite a data de nascimento");
-            string dataNascimento = Console.ReadLine();
-
-            // Fim Criação da Conta
+            
 
 
             //mudar senha
@@ -51,12 +35,18 @@ namespace SistemaDeLogin
 
             int menu = Convert.ToInt32(Console.ReadLine());
 
+            CriarConta criarConta = new CriarConta();
+
+           
+
             switch (menu)
             {
                 case 1:
                     Console.WriteLine("Logado no sistema");
                     break;
                 case 2:
+                    criarConta.NovaConta(menu);
+
                     Console.WriteLine("Conta criada com sucesso!");
                     break;
                 case 3:
